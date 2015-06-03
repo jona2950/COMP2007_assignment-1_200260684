@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="COMP2007_assignment_1._default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Score Calculator</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!--jquery CDN -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <h1>Game Score</h1>
+    <!--START OF NAV-->
+    <nav class="navbar navbar-default"> 
+        
+        <!-- END of navbar, navbar-default -->
+    </nav>
+    <!--START of form1-->
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+                <!-- END of row -->
+            </div>
+            <!-- END of container-fluid -->
+        </div>
+        <div class="text-center panel-footer">
+            <asp:Button CssClass="btn btn-primary" ID="btnCalculate" runat="server" Text="Calculate Matches" OnClick="btnCalculate_Click" />
+        </div>
+        <!-- END of container -->
+    </div>
+        <!-- END of form -->
+    </form>
+    <!-- START of footer -->
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <footer class="panel-footer">
+        <div class="text-center ">
+            2015@ COMP2007 -- Assignment 1, 200260684
+        </div>
+    </footer>
+</body>
+</html>
